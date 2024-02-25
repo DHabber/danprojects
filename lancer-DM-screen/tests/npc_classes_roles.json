@@ -1,0 +1,129 @@
+{
+    "Artillery": [
+        {
+            "Class": "Bombard",
+            "description": "High-damage, long-range artillery that focus on area damage and deal more damage based on the number of targets they hit."
+        },
+        {
+            "Class": "Operator",
+            "description": "Very mobile, teleporting artillery that consistently deal high damage."
+        },
+        {
+            "Class": "Rainmaker",
+            "description": "Long-range artillery that shoot delayed-impact rockets, dealing significant damage."
+        },
+        {
+            "Class": "Sniper",
+            "description": "Exceptionally long-ranged and accurate artillery that can deal damage directly to a mech’s structure under the right circumstances."
+        }
+    ],
+    "Controller": [
+        {
+            "Class": "Archer",
+            "description": "Controllers that deal relatively high damage and force their enemies to choose between immobility or taking additional damage.."
+        },
+        {
+            "Class": "Barricade",
+            "description": "Controllers that create cover for allies and lock down fast-moving enemies."
+        },
+        {
+            "Class": "Hive",
+            "description": "Controllers that create areas that damage enemies and protect allies, forcing opponents to move around."
+        },
+        {
+            "Class": "Hornet",
+            "description": "Very fast, hard to hit controllers that inflict conditions on enemies at the price of being vulnerable to conditions themselves."
+        },
+        {
+            "Class": "Seeder",
+            "description": "Controllers that focus on denying an area using traps and mines."
+        },
+        {
+            "Class": "Witch",
+            "description": "Nasty controllers that inflict conditions and heat on enemies."
+        }
+    ],
+    "Defender": [
+        {
+            "Class": "Bastion",
+            "description": "Shield-bearing defenders that protect nearby allies from harm."
+        },
+        {
+            "Class": "Demolisher",
+            "description": "Slow, high-damage defenders that are resistant to melee damage and very dangerous at close range."
+        },
+        {
+            "Class": "Goliath",
+            "description": "Enormous defenders that can taunt enemies or pin them at close range, and must be fought up-close."
+        },
+        {
+            "Class": "Pyro",
+            "description": "Slow-moving defenders that deal damage in an area at close range and generate energy shields to protect their allies."
+        },
+        {
+            "Class": "Sentinel",
+            "description": "Relatively fast defenders that specialize at protecting nearby allies."
+        }
+    ],
+    "Striker": [
+        {
+            "Class": "Ace",
+            "description": "Fast-flying strikers with the ability to negate burst damage."
+        },
+        {
+            "Class": "Assassin",
+            "description": "Mobile strikers that excel at hunting down single targets."
+        },
+        {
+            "Class": "Assault",
+            "description": "Hardy strikers that deal consistent damage."
+        },
+        {
+            "Class": "Berserker",
+            "description": "Fast melee strikers that are dangerous in close combat but risk harming allies."
+        },
+        {
+            "Class": "Cataphract",
+            "description": "Fast-moving strikers that can drag their enemies along with them."
+        },
+        {
+            "Class": "Engineer",
+            "description": "Strikers that deploy turrets, rapidly increasing their damage output if not dealt with."
+        },
+        {
+            "Class": "Ronin",
+            "description": "Melee duelists that can reflect ranged attacks and deal area damage at close range."
+        },
+        {
+            "Class": "Specter",
+            "description": "Mobile, invisible strikers that get bonuses when attacking solitary targets."
+        },
+        {
+            "Class": "Scourer",
+            "description": "Relatively slow strikers that deal high damage to individual targets and get benefits against enemies they have already hit."
+        }
+    ],
+    "Support": [
+        {
+            "Class": "Aegis",
+            "description": "Hardy supports that use shields to protect areas of the map."
+        },
+        {
+            "Class": "Mirage",
+            "description": "Supports that don’t deal any damage, but can turn their allies invisible and teleport them around."
+        },
+        {
+            "Class": "Priest",
+            "description": "Technical supports that can connect their systems with those of allies, enhancing them at the cost of increasing their own vulnerability."
+        },
+        {
+            "Class": "Scout",
+            "description": "Supports that make targets vulnerable and prevent enemies from hiding or becoming invisible."
+        },
+        {
+            "Class": "Support",
+            "description": "Pure supports that repair their allies and clear conditions."
+        }
+    ]
+  }
+  

@@ -13,3 +13,7 @@
 !lancer-DM-screen/templates/page2.html
 !lancer-DM-screen/templates/page3.html
 !lancer-DM-screen/templates/tablesroller.html
+!lancer-DM-screen/tests
+!lancer-DM-screen/tests/test_table_rolling_funcs.py
+!lancer-DM-screen/tests/npc_classes_roles.json
+!lancer-DM-screen/tests/tables.json

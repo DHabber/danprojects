@@ -19,8 +19,8 @@ def generate_random_world(json_file):
         world_text += table + ': ' + roll_on_table('tables.json', table) + '\n\n'
     return world_text
 
-def npc_encounter_generator(player_count):
-    with open('npc_classes_roles.json', encoding='utf-8') as f:
+def npc_encounter_generator(player_count, json_file='npc_classes_roles.json'):
+    with open(json_file, encoding='utf-8') as f:
         data = json.load(f)
     
     enemies = {'Standard': 0, 'Grunt': 0, 'Elite': 0, 'Ultra': 0}
