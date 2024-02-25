@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header/Hotbar -->
+    <div class="header">
+        <h2>Table Roller</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tablesroller">Tables Roller</a></li>
+                <li><a href="/page2">Page 2</a></li>
+                <li><a href="/page3">Page 3</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Welcome to the Index Page</h1>
+    <a href="/tablesroller"><button>Tables Roller</button></a>
+    <a href="/page2"><button>Page 2</button></a>
+    <a href="/page3"><button>Page 3</button></a>
+</body>
+</html>
