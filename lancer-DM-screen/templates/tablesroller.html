@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Roller</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header/Hotbar -->
+    <div class="header">
+        <h2>Table Roller</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tablesroller">Tables Roller</a></li>
+                <li><a href="/page2">Page 2</a></li>
+                <li><a href="/page3">Page 3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <p>Select a table from the drop-down list, and press 'generate' to roll on the given table and view the result.</p>
+
+        <form action="/generate_text" method="POST">
+            <select id="category" name="category">
+                {% for category in categories %}
+                    <option value="{{ category }}">{{ category }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Generate</button>
+        </form>
+
+        <form action="/generate_random_world" method="POST">
+            <button type="submit">Generate Random World</button>
+        </form>
+
+        <form action="/generate_random_encounter" method="POST">
+            <select id="number" name="number">
+                {% for i in range(1, 17) %}
+                    <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Generate Random Encounter</button>
+        </form>
+
+        {% if random_text %}
+            <textarea readonly>{{ random_text }}</textarea>
+        {% endif %}
+    </div>
+
+    <script>
+        // Retrieve selected category from local storage and set it as selected
+        var selected_category = localStorage.getItem('selected_category');
+        if (selected_category) {
+            document.getElementById('category').value = selected_category;
+        }
+
+        // Retrieve selected number from local storage and set it as selected
+        var selected_number = localStorage.getItem('selected_number');
+        if (selected_number) {
+            document.getElementById('number').value = selected_number;
+        }
+
+        // Save selected category to local storage when changed
+        document.getElementById('category').addEventListener('change', function() {
+            localStorage.setItem('selected_category', this.value);
+        });
+
+        // Save selected number to local storage when changed
+        document.getElementById('number').addEventListener('change', function() {
+            localStorage.setItem('selected_number', this.value);
+        });
+    </script>
+</body>
+</html>
