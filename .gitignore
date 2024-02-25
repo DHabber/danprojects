@@ -1,4 +1,15 @@
 *
 !.gitignore
 !README.md
-!test
+!lancer-DM-screen/
+!lancer-DM-screen/tables.json
+!lancer-DM-screen/table_rolling_funcs.py
+!lancer-DM-screen/npc_classes_roles.json
+!lancer-DM-screen/app.py
+!lancer-DM-screen/static/
+!lancer-DM-screen/static/styles.css
+!lancer-DM-screen/templates/
+!lancer-DM-screen/templates/index.html
+!lancer-DM-screen/templates/page2.html
+!lancer-DM-screen/templates/page3.html
+!lancer-DM-screen/templates/tablesroller.html
